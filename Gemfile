@@ -6,4 +6,9 @@ gem 'sinatra', '1.3.3'
 gem 'sass', '3.2.1'
 
 gem 'foreman'
-gem "shotgun"
+gem "thin"
+
+group :development do
+  gem 'debugger'
+  gem 'shotgun'
+end
