@@ -1,0 +1,4 @@
+.env
+.rbenv-version
+.DS_Store
+.sass-cache/
