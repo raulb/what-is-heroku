@@ -22,6 +22,20 @@
   document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
   </script>
 
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35884664-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
@@ -45,7 +59,7 @@
           <br><br><br>
           <p class="fragment">I'm Front End Engineer</p>
           <p class="fragment">I work @ Heroku</p>
-          <p class="fragment">I moved to SF on February 2012</p>
+          <p class="fragment">I moved to SF in February 2012</p>
           <p class="fragment">This is my first talk in English</p>          
         </section>
         <section>
@@ -157,7 +171,7 @@
           <!-- by <a href="http://www.flickr.com/photos/yukop">yukop</a> -->
         </section>
         <section>
-          <h2>Example:</h2>
+          <h2>Example</h2>
           <h3>How create your application<br><br></h3>
           <pre><code contenteditable>$ heroku create
 
@@ -171,7 +185,7 @@
           <h1 class="fragment"><br>SHARE THEM</h1>
         </section>
         <section>
-          <h3>Step 1. You have your application</h3>
+          <h3><span>Step 1.</span> Build your application</h3>
           <h2 class="fragment">Languages?</h2>
           <ol>
             <li class="fragment">Ruby</li>
@@ -182,17 +196,18 @@
             <div class="fragment">
               <li>And... Buildpacks</li>
               <pre><code contenteditable>$ heroku create --buildpack http://github.com/heroku/heroku-buildpack-ruby.git</code></pre>
+              <br>
               <a href="https://github.com/heroku/heroku-buildpacks" target="_blank">https://github.com/heroku/heroku-buildpacks</a>
             </div>
           </ol>
         </section>
         <section>
-          <h3>Step 2.</h3>
+          <h3><span>Step 2.</span> Download it</h3>
           <img src="/images/toolbelt.png" alt="Heroku Toolbelt">
           <a href="https://toolbelt.heroku.com/" target="_blank">https://toolbelt.heroku.com/</a>
         </section>
         <section>
-          <h3>Step 3. Create your app on Heroku <br></h3>
+          <h3><span>Step 3.</span> Create your app on Heroku <br></h3>
           <br>
           <pre><code contenteditable>$ heroku create
 
@@ -200,7 +215,7 @@
 -> http://ancient-anchorage-7699.herokuapp.com/ | git@heroku.com:ancient-anchorage-7699.git</code></pre>
         </section>
         <section>
-          <h3>Step 4. Deploy</h3>
+          <h3><span>Step 4.</span> Deploy</h3>
           <pre><code contenteditable>$ git push heroku master
   Counting objects: 7, done.
   Delta compression using up to 4 threads.
@@ -233,23 +248,25 @@
   -----> Launching... done, v7
          http://what-is.herokuapp.com deployed to Heroku
 </code></pre>
-
-          <a href="http://my-app.herokuapp.com" target="_blank">http://my-app.herokuapp.com</a>
+          <br>
+          <a href="http://what-is.herokuapp.com" target="_blank">http://what-is.herokuapp.com</a>
         </section>
         <section>
-          <h1>You can start it<br>by Free</h1>
+          <h1>You can start<br>by Free</h1>
           <br><br>
           <p>And later, the more you need, the more you pay</p>
           <p class="fragment">It's perfect for startups or testing something quickly</p>
+          <br>
           <a class="fragment" href="http://dashboard.heroku.com/" target="_blank">http://dashboard.heroku.com/</a>
         </section>
         <section>
           <h1>But also is great <br>to scale</h1>
-
-          <pre><br><br><code contenteditable>$ heroku ps:scale web=2 worker=1
+          <br>
+          <pre><code contenteditable>$ heroku ps:scale web=2 worker=1
   Scaling web processes... done, now running 2
   Scaling worker processes... done, now running 1
           </code></pre>
+          <br><br>
           <a href="http://success.heroku.com/" target="_blank">http://success.heroku.com/</a>
         </section>
         <section>
@@ -266,6 +283,7 @@
           <h2>Postgres</h2>
           <br>
           <img src="/images/postgres.png" alt="Postgres">
+          <br><br>
           <a href="https://postgres.heroku.com/" target="_blank">https://postgres.heroku.com/</a>
         </section>
         <section>
@@ -277,26 +295,27 @@
           <p class="fragment">Even playing dodgeball</p>
         </section>
         <section>
-          <h2>Documentation:</h2>
+          <h2>Documentation</h2>
           <img src="/images/devcenter.png" alt="Devcenter">
+          <br>
           <a href="https://devcenter.heroku.com" target="_blank">https://devcenter.heroku.com/</a>
         </section>
         <section>
-          <h2>Status:</h2>
+          <h2>Status</h2>
           <img src="/images/status.png" alt="Status Site">
           <a href="https://status.heroku.com/" target="_blank">https://status.heroku.com/</a>
         </section>
         <section>
-          <h2>Lights at office:</h2>
+          <h2>Lights at the office</h2>
           <img src="/images/status-lights.png" alt="Status lights">
         </section>
         <section>
-          <h2>Help:</h2>
+          <h2>Help and Support</h2>
           <img src="/images/help.png" alt="Help">
           <a href="http://help.heroku.com/" target="_blank">http://help.heroku.com/</a>
         </section>
         <section>
-          <h2>Good practises:</h2>
+          <h2>Good practises</h2>
           <p>Because is not only about how to use our platform</p>
           <br>
           <ul>
@@ -334,12 +353,13 @@
         </section>
         <section>
           <br><br>
-          <h1>Stay tunned!</h1>
+          <h1>Visit us</h1>
+          <p>321 11th</p>
+          <p>San Francisco, CA</p>
           <br>
-          <p>And please, visit us at the office</p>
-          <p>321 11th, San Francisco</p>
           <br>
-          <p>Send me an email <a href="mailto:raulb@heroku.com">raulb@heroku.com</a> <br>or send me a DM <a href="http://twitter.com/raulbleon" target="_blank">@raulbleon</a></p>
+          <br>
+          <p><a href="mailto:raulb@heroku.com">raulb@heroku.com</a> <br><a href="http://twitter.com/raulbleon" target="_blank">@raulbleon</a></p>
 
         </section>
         <section>
