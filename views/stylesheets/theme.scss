@@ -1,4 +1,6 @@
 $link-color: #6762A6;
+$start-bg-color: #363A46;
+$end-bg-color: #131519;
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
@@ -14,11 +16,11 @@ $link-color: #6762A6;
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #363A46;
-  background-image:-webkit-gradient(radial, center center, 0, center center, 500, from(#363A46), to(#131519));
-  background-image:-moz-radial-gradient(center, circle closest-side, #363A46 0%, #131519 100%);
-  background-image:-o-radial-gradient(center, circle closest-side, #363A46 0%, #131519 100%); /* Opera 11.10+ */
-  background-image: -o-linear-gradient(#363A46,#131519);
+  background: $start-bg-color;
+  background-image:-webkit-gradient(radial, center center, 0, center center, 500, from($start-bg-color), to($end-bg-color));
+  background-image:-moz-radial-gradient(center, circle closest-side, $start-bg-color 0%, $end-bg-color 100%);
+  background-image:-o-radial-gradient(center, circle closest-side, $start-bg-color 0%, $end-bg-color 100%); /* Opera 11.10+ */
+  background-image: -o-linear-gradient($start-bg-color,$end-bg-color);
 }
 
 .reveal {
