@@ -2,10 +2,14 @@
 
 HTML5 presentation about Heroku.
 
-## Technologies
-
 Sinatra Application using [Reveal](https://github.com/hakimel/reveal.js)
 
-Of course, running on Heroku
+## Run locally
+
+```bash
+$ gem install bundler
+$ bundle install
+$ foreman start
+```
 
 http://what-is.herokuapp.com
