@@ -9,7 +9,7 @@ Sinatra Application using [Reveal](https://github.com/hakimel/reveal.js)
 ```bash
 $ gem install bundler
 $ bundle install
-$ foreman start
+$ bundle exec thin start
 ```
 
 http://what-is.herokuapp.com
