@@ -2,8 +2,8 @@ source :rubygems
 
 ruby '2.5.0'
 
-gem 'sinatra', '1.4.8'
-gem 'sass', '3.5.5'
+gem 'sinatra', '2.0.2'
+gem 'sass', '3.6.0'
 
 gem 'foreman'
 gem "thin"
