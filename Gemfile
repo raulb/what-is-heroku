@@ -1,8 +1,8 @@
-source :rubygems
+source 'https://rubygems.org'
 
-ruby '2.5.0'
+ruby '3.1.0'
 
-gem 'sinatra', '2.0.2'
+gem 'sinatra', '2.1.0'
 gem 'sass', '3.6.0'
 
 gem 'foreman'
